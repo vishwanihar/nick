@@ -1,4 +1,4 @@
-properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/vishwanihar/nick.git/'], gitLabConnection(''), pipelineTriggers([githubPush()])])
+properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/vishwanihar/nick.git/'], gitHubConnection(''), pipelineTriggers([githubPush()])])
 
 pipeline {
     agent any 
