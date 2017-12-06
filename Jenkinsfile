@@ -1,10 +1,5 @@
 #!/usr/bin/env groovy
-properties([
-    [$class: 'GithubProjectProperty',
-    displayName: '',
-    projectUrlStr: 'https://github.com/vishwanihar/nick.git'],
-    pipelineTriggers([githubPush()])])
-
+properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/vishwanihar/nick.git/'], githubConnection(''), pipelineTriggers([githubPush()])])
 pipeline {
     agent any 
 
